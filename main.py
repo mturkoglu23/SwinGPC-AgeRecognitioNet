@@ -110,7 +110,7 @@ overall_confusion_matrix = [[0, 0, 0, 0, 0], [0, 0, 0, 0, 0],
                             [0, 0, 0, 0, 0],[0, 0, 0, 0, 0],
                             [0, 0, 0, 0, 0]]
 
-# 10 kat çapraz doğrulama işlemi
+# 5 kat çapraz doğrulama işlemi
 for train_idx, test_idx in StratifiedKFold(n_splits=5).split(X, y):
     X_train, X_test = X[train_idx], X[test_idx]
     y_train, y_test = y[train_idx], y[test_idx]
